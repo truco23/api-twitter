@@ -1,0 +1,19 @@
+POST
+    curl http://localhost:3000/tweet/add -X POST -v -H "Content-type: application/json" -d @json/tweet.json | json_pp
+
+    curl http://localhost:3000/like/5c5f4adc039b281e2cc5697e -X POST -v
+
+DELETE
+    curl -H "Content-type: application/json" -X DELETE http://localhost:3000/tweets/colocar-id
+
+
+
+
+
+
+
+
+
+
+
+db.tweets.insert( {author: "Ciclano", content: "Segundo",likes: 1,date: new Date()})
